@@ -7,6 +7,7 @@ sudo pacman -Sy xdg-desktop-portal xdg-desktop-portal-gnome xdg-desktop-portal-g
 
 # essential tools
 sudo pacman -Sy traceroute kubectl
+yay -Sy google-cloud-sdk --noconfirm
 
 # hypervisor section
 sudo pacman -Sy vagrant virt-manager iptables-nft dnsmasq bridge-utils openbsd-netcat --noconfirm
