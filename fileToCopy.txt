@@ -1,1 +1,3 @@
 /etc/systemd/resolved.conf
+/etc/systemd/resolved.conf.d/*
+/etc/NetworkManager/NetworkManager.conf
