@@ -4,3 +4,4 @@
 /etc/sudoers.d/openfortivpn
 #RCS
 /home/*/.openfortigui/
+/usr/local/bin/terraform*
