@@ -3,4 +3,4 @@
 /etc/NetworkManager/NetworkManager.conf
 /etc/sudoers.d/openfortivpn
 #RCS
-/home/*/app/openfortivpn/rcs
+/home/*/.openfortigui/
