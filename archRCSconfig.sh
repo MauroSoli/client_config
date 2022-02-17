@@ -3,11 +3,12 @@
 mkdir -p ~/git/
 cd ~/git/
 if [ $? = "0" ]; then
-    git clone https://gitlab.rcslan.it/CDT/utilities.git
-    git clone https://gitlab.rcslan.it/CDT/aws-terraform.git
-    git clone https://gitlab.rcslan.it/CDT/terraform.git
-    git clone https://gitlab.rcslan.it/CDT/solrcloud-config.git
-    git clone https://gitlab.rcslan.it/CDT/Jenkinsfiles.git
+    git clone https://repoGitlab:$GitRcsToken@gitlab.rcslan.it/CDT/utilities.git
+    git clone https://repoGitlab:$GitRcsToken@gitlab.rcslan.it/CDT/aws-terraform.git
+    git clone https://repoGitlab:$GitRcsToken@gitlab.rcslan.it/CDT/terraform.git
+    git clone https://repoGitlab:$GitRcsToken@gitlab.rcslan.it/CDT/solrcloud-config.git
+    git clone https://repoGitlab:$GitRcsToken@gitlab.rcslan.it/CDT/Jenkinsfiles.git
+    git clone https://repoGitlab:$GitRcsToken@gitlab.rcslan.it/CDT/varnish-configuration.git
 else
  echo "Problem with folder creation"
 fi
@@ -29,4 +30,6 @@ fi
 # GKE configuration
 gcloud init
 clusters=$(gcloud container clusters list | grep -vE 'NAME.*LOCATION' | awk '{print $1}') 
-for cluster in $clusters; do gcloud container clusters get-credentials $cluster --region europe-west4 --project prod-268013; done 
+for cluster in $clusters; do 
+   gcloud container clusters get-credentials $cluster --region europe-west4 --project prod-268013
+done 

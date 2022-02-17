@@ -1,3 +1,6 @@
 /etc/systemd/resolved.conf
 /etc/systemd/resolved.conf.d/*
 /etc/NetworkManager/NetworkManager.conf
+/etc/sudoers.d/openfortivpn
+#RCS
+/home/*/app/openfortivpn/rcs
