@@ -12,13 +12,19 @@ sudo pacman -S lib32-pipewire lib32-pipewire-jack pipewire-jack libpipewire02 pi
 sudo pacman -S xdg-desktop-portal xdg-desktop-portal-gnome xdg-desktop-portal-gtk --noconfirm
 
 # Essential tools
+sudo pacman -S git
+git  lfs install
 sudo pacman -S kubectl
 sudo pacman -S lshw --noconfirm
 sudo pacman -S jre-openjdk --noconfirm
 sudo pacman -S podman --noconfirm
 sudo pacman -S traceroute --noconfirm
 sudo pacman -S openfortivpn --noconfirm
+sudo pacman -S terragrunt --noconfirm
 yay -S openfortigui --noconfirm
+
+#Cloud CLI
+sudo pacman -S aws-cli --noconfirm
 yay -S google-cloud-sdk --noconfirm
 
 # Hypervisor section
