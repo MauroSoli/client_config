@@ -22,6 +22,7 @@ sudo pacman -S traceroute --noconfirm
 sudo pacman -S openfortivpn --noconfirm
 sudo pacman -S terragrunt --noconfirm
 yay -S openfortigui --noconfirm
+yay -S kazam --noconfirm
 
 #Cloud CLI
 sudo pacman -S aws-cli --noconfirm
@@ -32,9 +33,11 @@ sudo pacman -S vagrant virt-manager iptables-nft bridge-utils openbsd-netcat --n
 
 # Optional software
 sudo pacman -S telegram-desktop --noconfirm
-yay -Sy lens --noconfirm
-pacman -Sy gnome-tweaks gnome-shell-extensions
+yay -S lens --noconfirm
+pacman -S gnome-tweaks gnome-shell-extensions --noconfirm
 yay -S chrome-gnome-shell --noconfirm
+pacman -S solaar --noconfirm
 
 # Gnome software
 sudo pacman -S gnome-software gnome-software-packagekit-plugin --noconfirm
+sudo pacman -Sy networkmanager-fortisslvpn --noconfirm
