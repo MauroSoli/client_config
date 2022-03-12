@@ -14,6 +14,7 @@ sudo pacman -S xdg-desktop-portal xdg-desktop-portal-gnome xdg-desktop-portal-gt
 # Essential tools
 sudo pacman -S git
 git  lfs install
+yay -S nautilus-compare --noconfirm
 sudo pacman -S kubectl
 sudo pacman -S lshw --noconfirm
 sudo pacman -S jre-openjdk --noconfirm
@@ -22,7 +23,8 @@ sudo pacman -S traceroute --noconfirm
 sudo pacman -S openfortivpn --noconfirm
 sudo pacman -S terragrunt --noconfirm
 yay -S openfortigui --noconfirm
-yay -S kazam --noconfirm
+sudo pacman -S obs-studio --noconfirm
+yay -S tigervnc-viewer  --noconfirm
 
 #Cloud CLI
 sudo pacman -S aws-cli --noconfirm
@@ -40,4 +42,4 @@ pacman -S solaar --noconfirm
 
 # Gnome software
 sudo pacman -S gnome-software gnome-software-packagekit-plugin --noconfirm
-sudo pacman -Sy networkmanager-fortisslvpn --noconfirm
+sudo pacman -S networkmanager-fortisslvpn --noconfirm

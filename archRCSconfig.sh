@@ -9,6 +9,7 @@ if [ $? = "0" ]; then
     git     clone https://repoGitlab:$GitRcsToken@gitlab.rcslan.it/CDT/solrcloud-config.git
     git     clone https://repoGitlab:$GitRcsToken@gitlab.rcslan.it/CDT/Jenkinsfiles.git
     git     clone https://repoGitlab:$GitRcsToken@gitlab.rcslan.it/CDT/varnish-configuration.git
+    git     clone https://repoGitlab:$GitRcsToken@gitlab.rcslan.it/CDT/httpd-configuration.git
 else
  echo "Problem with folder creation"
 fi
