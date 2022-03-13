@@ -27,9 +27,6 @@ yay -S google-chrome --noconfirm --needed
 yay -S openfortigui --noconfirm --needed
 yay -S tigervnc-viewer  --noconfirm --needed
 
-# Essential Software
-
-
 #Cloud CLI
 sudo pacman -S aws-cli --noconfirm --needed
 yay -S google-cloud-sdk --noconfirm --needed
