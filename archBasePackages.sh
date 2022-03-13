@@ -2,44 +2,48 @@
 set -e
 
 # systemd-resolvd binary
-pacman -Sy systemd-resolvconf --noconfirm
+pacman -Sy systemd-resolvconf --noconfirm --needed
 
 # GPU and rendering
-sudo pacman -S xf86-video-nouveau --noconfirm
+sudo pacman -S xf86-video-nouveau --noconfirm --needed
 
 # Pipewire packages + webrtc
-sudo pacman -S lib32-pipewire lib32-pipewire-jack pipewire-jack libpipewire02 pipewire pipewire-alsa pipewire-pulse gst-plugin-pipewire
-sudo pacman -S xdg-desktop-portal xdg-desktop-portal-gnome xdg-desktop-portal-gtk --noconfirm
+sudo pacman -S lib32-pipewire lib32-pipewire-jack pipewire-jack libpipewire02 pipewire pipewire-alsa pipewire-pulse gst-plugin-pipewire --needed
+sudo pacman -S xdg-desktop-portal xdg-desktop-portal-gnome xdg-desktop-portal-gtk --noconfirm --needed
 
-# Essential tools
-sudo pacman -S git
-git  lfs install
-yay -S nautilus-compare --noconfirm
-sudo pacman -S kubectl
-sudo pacman -S lshw --noconfirm
-sudo pacman -S jre-openjdk --noconfirm
-sudo pacman -S podman --noconfirm
-sudo pacman -S traceroute --noconfirm
-sudo pacman -S openfortivpn --noconfirm
-sudo pacman -S terragrunt --noconfirm
-yay -S openfortigui --noconfirm
-sudo pacman -S obs-studio --noconfirm
-yay -S tigervnc-viewer  --noconfirm
+# Essential tools/software
+sudo pacman -S git --needed
+git lfs install
+yay -Sy nautilus-compare --noconfirm --needed
+sudo pacman -S kubectl --needed
+sudo pacman -S lshw --noconfirm --needed
+sudo pacman -S jre-openjdk --noconfirm --needed
+sudo pacman -S podman --noconfirm --needed
+sudo pacman -S traceroute --noconfirm --needed
+sudo pacman -S openfortivpn --noconfirm --needed
+sudo pacman -S terragrunt --noconfirm --needed
+sudo pacman -S obs-studio --noconfirm --needed
+yay -S google-chrome --noconfirm --needed
+yay -S openfortigui --noconfirm --needed
+yay -S tigervnc-viewer  --noconfirm --needed
+
+# Essential Software
+
 
 #Cloud CLI
-sudo pacman -S aws-cli --noconfirm
-yay -S google-cloud-sdk --noconfirm
+sudo pacman -S aws-cli --noconfirm --needed
+yay -S google-cloud-sdk --noconfirm --needed
 
 # Hypervisor section
-sudo pacman -S vagrant virt-manager iptables-nft bridge-utils openbsd-netcat --noconfirm
+sudo pacman -S vagrant virt-manager iptables-nft bridge-utils openbsd-netcat --noconfirm --needed
 
 # Optional software
-sudo pacman -S telegram-desktop --noconfirm
-yay -S lens --noconfirm
-pacman -S gnome-tweaks gnome-shell-extensions --noconfirm
-yay -S chrome-gnome-shell --noconfirm
-pacman -S solaar --noconfirm
+sudo pacman -S telegram-desktop --noconfirm --needed
+yay -S lens --noconfirm --needed
+pacman -S gnome-tweaks gnome-shell-extensions --noconfirm --needed
+yay -S chrome-gnome-shell --noconfirm --needed
+pacman -S solaar --noconfirm --needed
 
 # Gnome software
-sudo pacman -S gnome-software gnome-software-packagekit-plugin --noconfirm
-sudo pacman -S networkmanager-fortisslvpn --noconfirm
+sudo pacman -S gnome-software gnome-software-packagekit-plugin --noconfirm --needed
+sudo pacman -S networkmanager-fortisslvpn --noconfirm --needed

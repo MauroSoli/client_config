@@ -2,4 +2,4 @@
 set -e
 
 # Networking
-systemctl enable systemd-resolved.service  --now
+systemctl enable systemd-resolved.service --now
