@@ -1,11 +1,11 @@
 #!/bin/bash
-set -e
+set -eu
 
 # systemd-resolvd binary
 pacman -Sy systemd-resolvconf --noconfirm --needed
 
 # GPU and rendering
-sudo pacman -S xf86-video-nouveau --noconfirm --needed
+#sudo pacman -S xf86-video-nouveau --noconfirm --needed
 
 # Pipewire packages + webrtc
 sudo pacman -S lib32-pipewire lib32-pipewire-jack pipewire-jack libpipewire02 pipewire pipewire-alsa pipewire-pulse gst-plugin-pipewire --needed
