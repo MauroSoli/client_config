@@ -2,6 +2,7 @@
 /etc/systemd/resolved.conf.d/*
 /etc/NetworkManager/NetworkManager.conf
 /etc/sudoers.d/openfortivpn
+~/.config/Code\ -\ OSS/
 #RCS
 /home/*/.openfortigui/
 /usr/local/bin/terraform*
