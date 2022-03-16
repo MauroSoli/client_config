@@ -16,6 +16,7 @@ sudo pacman -S git --needed
 git lfs install
 yay -Sy nautilus-compare --noconfirm --needed
 sudo pacman -S kubectl --needed
+sudo pacman -S rclone --noconfirm --needed
 sudo pacman -S lshw --noconfirm --needed
 sudo pacman -S jre-openjdk --noconfirm --needed
 sudo pacman -S podman --noconfirm --needed
