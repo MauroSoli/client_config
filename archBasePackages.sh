@@ -41,6 +41,7 @@ yay -S lens --noconfirm --needed
 pacman -S gnome-tweaks gnome-shell-extensions --noconfirm --needed
 yay -S chrome-gnome-shell --noconfirm --needed
 pacman -S solaar --noconfirm --needed
+pacman -S ipcalc --noconfirm --needed
 
 # Gnome software
 sudo pacman -S gnome-software gnome-software-packagekit-plugin gnome-multi-writer --noconfirm --needed
