@@ -3,15 +3,15 @@
 mkdir -p ~/git/
 cd ~/git/
 if [ $? = "0" ]; then
-    git     clone https://repoGitlab:$GitRcsToken@gitlab.rcslan.it/CDT/utilities.git
-    git     clone https://repoGitlab:$GitRcsToken@gitlab.rcslan.it/CDT/aws-terraform.git
-    git lfs clone https://repoGitlab:$GitRcsToken@gitlab.rcslan.it/CDT/terraform.git
-    git     clone https://repoGitlab:$GitRcsToken@gitlab.rcslan.it/CDT/solrcloud-config.git
-    git     clone https://repoGitlab:$GitRcsToken@gitlab.rcslan.it/CDT/Jenkinsfiles.git
-    git     clone https://repoGitlab:$GitRcsToken@gitlab.rcslan.it/CDT/varnish-configuration.git
-    git     clone https://repoGitlab:$GitRcsToken@gitlab.rcslan.it/CDT/httpd-configuration.git
+    git     clone https://repoGitlab:$gitRcsToken@gitlab.rcslan.it/CDT/utilities.git
+    git     clone https://repoGitlab:$gitRcsToken@gitlab.rcslan.it/CDT/aws-terraform.git
+    git lfs clone https://repoGitlab:$gitRcsToken@gitlab.rcslan.it/CDT/terraform.git
+    git     clone https://repoGitlab:$gitRcsToken@gitlab.rcslan.it/CDT/solrcloud-config.git
+    git     clone https://repoGitlab:$gitRcsToken@gitlab.rcslan.it/CDT/Jenkinsfiles.git
+    git     clone https://repoGitlab:$gitRcsToken@gitlab.rcslan.it/CDT/varnish-configuration.git
+    git     clone https://repoGitlab:$gitRcsToken@gitlab.rcslan.it/CDT/httpd-configuration.git
     mkdir -p xalok; cd xalok
-    git     clone https://repoGitlab:$GitRcsToken@gitlab.rcslan.it/CDT/xalok/image-building.git
+    git     clone https://repoGitlab:$gitRcsToken@gitlab.rcslan.it/CDT/xalok/image-building.git
     cd ..
 else
  echo "Problem with folder creation"
