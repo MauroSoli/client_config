@@ -44,6 +44,9 @@ yay -S chrome-gnome-shell --noconfirm --needed
 pacman -S solaar --noconfirm --needed
 pacman -S ipcalc --noconfirm --needed
 
+# Fonts
+sudo pacman -S ttf-cascadia-code --noconfirm --needed
+
 # Gnome software
 sudo pacman -S gnome-software gnome-software-packagekit-plugin gnome-multi-writer --noconfirm --needed
 sudo pacman -S networkmanager-fortisslvpn --noconfirm --needed
