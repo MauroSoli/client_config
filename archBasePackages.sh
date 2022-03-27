@@ -17,6 +17,7 @@ git lfs install
 yay -Sy nautilus-compare --noconfirm --needed
 sudo pacman -S kubectl --needed
 sudo pacman -S rclone --noconfirm --needed
+sudo pacman -S duplicity python-requests-oauthlib --noconfirm --needed 
 sudo pacman -S rsnapshot --noconfirm --needed
 sudo pacman -S lshw --noconfirm --needed
 sudo pacman -S jre-openjdk --noconfirm --needed
@@ -25,6 +26,7 @@ sudo pacman -S traceroute --noconfirm --needed
 sudo pacman -S openfortivpn --noconfirm --needed
 sudo pacman -S terragrunt --noconfirm --needed
 sudo pacman -S obs-studio --noconfirm --needed
+sudo pacman -S ansible --noconfirm --needed
 yay -S google-chrome --noconfirm --needed
 yay -S openfortigui --noconfirm --needed
 yay -S tigervnc-viewer  --noconfirm --needed
