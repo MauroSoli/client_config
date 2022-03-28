@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo pacman -Sy subversion kubectl --noconfirm
+sudo pacman -Sy subversion kubectl --noconfirm --needed

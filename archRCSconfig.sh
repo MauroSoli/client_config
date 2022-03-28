@@ -12,6 +12,9 @@ if [ $? = "0" ]; then
     git     clone https://repoGitlab:$gitRcsToken@gitlab.rcslan.it/CDT/httpd-configuration.git
     mkdir -p xalok; cd xalok
     git     clone https://repoGitlab:$gitRcsToken@gitlab.rcslan.it/CDT/xalok/image-building.git
+    git     clone https://repoGitlab:$gitRcsToken@gitlab.rcslan.it/CDT/xalok/rcs-corriere.git
+    git     clone https://repoGitlab:$gitRcsToken@gitlab.rcslan.it/CDT/xalok/rcs-gazzetta.git
+    git     clone https://repoGitlab:$gitRcsToken@gitlab.rcslan.it/CDT/xalok/rcs-provision.git
     cd ..
 else
  echo "Problem with folder creation"
