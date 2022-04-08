@@ -32,6 +32,7 @@ sudo pacman -S openfortivpn --noconfirm --needed
 sudo pacman -S terragrunt --noconfirm --needed
 sudo pacman -S obs-studio --noconfirm --needed
 sudo pacman -S ansible --noconfirm --needed
+sudo pacman -S mariadb-clients --noconfirm --needed
 yay -S google-chrome --noconfirm --needed
 yay -S openfortigui --noconfirm --needed
 yay -S tigervnc-viewer  --noconfirm --needed
