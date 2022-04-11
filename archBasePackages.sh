@@ -9,7 +9,7 @@ sudo pacman -Sy git subversion --noconfirm --needed
 if [ ! -f "/bin/yay" ]; then
     git clone https://aur.archlinux.org/yay.git
     cd yay
-    makepkg -si
+    makepkg -si --noconfirm
     cd ..
     rm -rf yay
 fi
