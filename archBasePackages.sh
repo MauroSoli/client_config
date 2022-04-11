@@ -29,6 +29,7 @@ sudo pacman -S nautilus --noconfirm --needed
 sudo pacman -S gnome-software gnome-software-packagekit-plugin gnome-multi-writer --noconfirm --needed
 sudo pacman -S networkmanager-fortisslvpn --noconfirm --needed
 sudo pacman -S gnome-tweaks gnome-shell-extensions --noconfirm --needed
+sudo pacman -Sy dconf --noconfirm --needed
 yay -S chrome-gnome-shell --noconfirm --needed
 
 # Essential tools/software
