@@ -75,6 +75,7 @@ sudo pacman -S vagrant virt-manager bridge-utils openbsd-netcat --noconfirm --ne
 sudo pacman -S telegram-desktop --noconfirm --needed
 sudo pacman -S solaar --noconfirm --needed
 sudo pacman -S ipcalc --noconfirm --needed
+yay -S spotify --noconfirm --needed
 
 # Fonts
 sudo pacman -S ttf-cascadia-code --noconfirm --needed
