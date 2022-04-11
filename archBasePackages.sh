@@ -45,6 +45,7 @@ sudo pacman -S rsnapshot --noconfirm --needed
 sudo pacman -S lshw --noconfirm --needed
 sudo pacman -S jre-openjdk --noconfirm --needed
 sudo pacman -S podman --noconfirm --needed
+sudo pacman -S docker --noconfirm --needed
 sudo pacman -S traceroute --noconfirm --needed
 sudo pacman -S openfortivpn --noconfirm --needed
 sudo pacman -S terragrunt --noconfirm --needed
