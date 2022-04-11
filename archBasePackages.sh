@@ -18,8 +18,9 @@ fi
 sudo pacman -S systemd-resolvconf --noconfirm --needed
 
 # Pipewire packages + webrtc
-sudo pacman -S  libpipewire02 pipewire pipewire-alsa pipewire-pulse gst-plugin-pipewire --needed
-yes | sudo pipewire-jack --needed
+sudo pacman -S  libpipewire02 pipewire pipewire-alsa gst-plugin-pipewire --needed
+yes | sudo pacman -S pipewire-pulse --needed
+yes | sudo pacman -S pipewire-jack  --needed
 sudo pacman -S  xdg-desktop-portal xdg-desktop-portal-gnome xdg-desktop-portal-gtk --noconfirm --needed
 
 # Gnome software
