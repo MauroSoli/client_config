@@ -50,7 +50,7 @@ sudo pacman -S obs-studio --noconfirm --needed
 sudo pacman -S ansible --noconfirm --needed
 sudo pacman -S mariadb-clients --noconfirm --needed
 yes | sudo pacman -S nodejs-lts-fermium --needed
-sudo pacman -S nodejs-nopt libxss c-ares nodejs-lts-fermium nodejs-nopt semver node-gyp npm yarn --noconfirm --needed
+sudo pacman -S nodejs-nopt libxss c-ares nodejs-nopt semver node-gyp npm yarn --noconfirm --needed
 yay -S lens --removemake --noconfirm --needed # dev'essere prima di ATOM! Meglio non usare noconfirm
 yay -S google-chrome --noconfirm --needed
 yay -S openfortigui --noconfirm --needed
