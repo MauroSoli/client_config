@@ -36,7 +36,7 @@ yay -S chrome-gnome-shell --noconfirm --needed
 sudo pacman -S git-lfs --noconfirm --needed
 git lfs install 
 sudo pacman -S vi net-tools --noconfirm --needed
-yay -Sy nautilus-compare --noconfirm --needed
+sudo pacman -S ncdu --noconfirm --needed
 sudo pacman -S terminator --noconfirm --needed
 sudo pacman -S kubectl --noconfirm --needed
 sudo pacman -S rclone --noconfirm --needed
@@ -54,6 +54,7 @@ sudo pacman -S ansible --noconfirm --needed
 sudo pacman -S mariadb-clients --noconfirm --needed
 yes | sudo pacman -S nodejs-lts-fermium --needed
 sudo pacman -S nodejs-nopt libxss c-ares nodejs-nopt semver node-gyp npm yarn --noconfirm --needed
+yay -Sy nautilus-compare --noconfirm --needed
 yay -S lens --removemake --noconfirm --needed # dev'essere prima di ATOM! Meglio non usare noconfirm
 yay -S google-chrome --noconfirm --needed
 yay -S openfortigui --noconfirm --needed
