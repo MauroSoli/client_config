@@ -59,6 +59,7 @@ yay -S lens --removemake --noconfirm --needed # dev'essere prima di ATOM! Meglio
 yay -S google-chrome --noconfirm --needed
 yay -S openfortigui --noconfirm --needed
 yay -S tigervnc-viewer  --noconfirm --needed
+yay -S powershell --noconfirm --needed
 
 # Code editors
 sudo pacman -S code --noconfirm --needed
