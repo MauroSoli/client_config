@@ -1,6 +1,8 @@
 systemctl enable systemd-resolved
 /home/linux/.icons \
 /home/linux/Downloads \
+/etc/pacman.conf \
+
 
 sudo rsync -avzpg -R --progress \
 /home/linux/.atom \
@@ -23,7 +25,6 @@ sudo rsync -avzpg -R --progress \
 /home/linux/S3-RCS \
 /home/linux/Videos \
 /home/linux/Pictures \
-/etc/pacman.conf \
 /etc/systemd/journald.conf \
 /etc/ssh/ssh_config \
 /etc/UPower \

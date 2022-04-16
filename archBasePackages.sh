@@ -23,6 +23,12 @@ yes | sudo pacman -S pipewire-pulse --needed
 yes | sudo pacman -S pipewire-jack  --needed
 sudo pacman -S  xdg-desktop-portal xdg-desktop-portal-gnome xdg-desktop-portal-gtk --noconfirm --needed
 
+# Style
+yay -Sy adwaita-dark --noconfirm --needed
+
+# Fonts
+sudo pacman -S ttf-cascadia-code --noconfirm --needed
+
 # Gnome software
 sudo pacman -S gnome-shell  gnome-terminal  gnome-tweak-tool gnome-control-center xdg-user-dirs gdm --noconfirm --needed
 sudo pacman -S nautilus --noconfirm --needed
@@ -79,6 +85,3 @@ sudo pacman -S telegram-desktop --noconfirm --needed
 sudo pacman -S solaar --noconfirm --needed
 sudo pacman -S ipcalc --noconfirm --needed
 yay -S spotify --noconfirm --needed
-
-# Fonts
-sudo pacman -S ttf-cascadia-code --noconfirm --needed
