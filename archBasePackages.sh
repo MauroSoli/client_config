@@ -4,36 +4,53 @@ set -eu
 # Update system
 sudo pacman -Syu
 
-#Install git and yay
-sudo pacman -Sy git subversion --noconfirm --needed
-if [ ! -f "/bin/yay" ]; then
-    git clone https://aur.archlinux.org/yay.git
-    cd yay
-    makepkg -si --noconfirm
-    cd ..
-    rm -rf yay
-fi
+# Base Packages from Endeavour OS
+sudo pacman -S dhclient dialog dnsmasq dnsutils ethtool gnu-netcat modemmanager nbd ndisc6 \
+nss-mdns openconnect openvpn ppp pptpclient rp-pppoe sshfs usb_modeswitch vpnc whois \
+wireless-regdb wireless_tools wpa_supplicant xl2tpd firewalld python-pyqt5 python-capng \
+bluez bluez-utils downgrade pacman-contrib pkgfile rebuild-detector reflector accountsservice \
+bash-completion ffmpegthumbnailer gst-libav gst-plugin-pipewire gst-plugins-bad gst-plugins-ugly \
+libdvdcss libgsf libopenraw mlocate poppler-glib xdg-user-dirs xdg-utils \
+efitools haveged mtools sg3_utils --noconfirm --needed
+
+# Install git and yay
+sudo pacman -S git subversion yay --noconfirm --needed
+#if [ ! -f "/bin/yay" ]; then
+#    git clone https://aur.archlinux.org/yay.git
+#    cd yay
+#    makepkg -si --noconfirm
+#    cd ..
+#    rm -rf yay
+#fi
 
 # systemd-resolvd binary
 sudo pacman -S systemd-resolvconf --noconfirm --needed
 
+# Driver + firmware 
+sudo pacman -S xf86-video-amdgpu xf86-video-ati xf86-video-intel b43-fwcutter broadcom-wl-dkms --noconfirm --needed
+sudo pacman -S ipw2100-fw ipw2200-fw --noconfirm --needed
+sudo pacman -S alsa-firmware alsa-plugins alsa-utils pavucontrol amd-ucode dmidecode dmraid \
+hdparm hwdetect intel-ucode lsscsi sof-firmware power-profiles-daemon upower --noconfirm --needed
+
 # Pipewire packages + webrtc
-sudo pacman -S  libpipewire02 pipewire pipewire-alsa gst-plugin-pipewire --needed --noconfirm
+sudo pacman -S  libpipewire02 pipewire pipewire-alsa gst-plugin-pipewire pipewire-media-session --needed --noconfirm
 yes | sudo pacman -S pipewire-pulse --needed
 yes | sudo pacman -S pipewire-jack  --needed
 sudo pacman -S  xdg-desktop-portal xdg-desktop-portal-gnome xdg-desktop-portal-gtk --noconfirm --needed
 
 # Style
-yay -Sy adwaita-dark --noconfirm --needed
+yay -Sy adwaita-dark candy-icons-git --noconfirm --needed
 
 # Fonts
-sudo pacman -S ttf-cascadia-code --noconfirm --needed
+sudo pacman -S freetype2 cantarell-fonts ttf-cascadia-code noto-fonts ttf-bitstream-vera \
+ttf-dejavu ttf-liberation ttf-opensans adobe-source-han-sans-cn-fonts adobe-source-han-sans-jp-fonts \
+adobe-source-han-sans-kr-fonts --noconfirm --needed
 
 # Gnome software
 sudo pacman -S gnome-shell  gnome-terminal  gnome-tweak-tool gnome-control-center xdg-user-dirs gdm --noconfirm --needed
 sudo pacman -S nautilus --noconfirm --needed
 sudo pacman -S gnome-software gnome-software-packagekit-plugin gnome-multi-writer --noconfirm --needed
-sudo pacman -S networkmanager-fortisslvpn --noconfirm --needed
+sudo pacman -S networkmanager-fortisslvpn networkmanager-openvpn --noconfirm --needed
 sudo pacman -S gnome-tweaks gnome-shell-extensions --noconfirm --needed
 sudo pacman -Sy dconf dconf-editor --noconfirm --needed
 yay -S chrome-gnome-shell --noconfirm --needed
@@ -41,7 +58,8 @@ yay -S chrome-gnome-shell --noconfirm --needed
 # Essential tools/software
 sudo pacman -S git-lfs --noconfirm --needed
 git lfs install 
-sudo pacman -S vi net-tools --noconfirm --needed
+sudo pacman -S vi net-tools unrar unzip xz --noconfirm --needed
+sudo pacman -S nfs-utils nilfs-utils ntp smartmontools nmap --noconfirm --needed
 sudo pacman -S ncdu --noconfirm --needed
 sudo pacman -S terminator --noconfirm --needed
 sudo pacman -S kubectl --noconfirm --needed
