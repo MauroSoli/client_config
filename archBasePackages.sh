@@ -14,6 +14,7 @@ libdvdcss libgsf libopenraw mlocate poppler-glib xdg-user-dirs xdg-utils \
 efitools haveged mtools sg3_utils --noconfirm --needed
 
 # Install git and yay
+cd /tmp/
 sudo pacman -S git subversion --noconfirm --needed
 if [ ! -f "/bin/yay" ]; then
     git clone https://aur.archlinux.org/yay.git
