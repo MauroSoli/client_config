@@ -8,20 +8,20 @@ sudo pacman -Syu
 sudo pacman -S dhclient dialog dnsmasq dnsutils ethtool gnu-netcat modemmanager nbd ndisc6 \
 nss-mdns openconnect openvpn ppp pptpclient rp-pppoe sshfs usb_modeswitch vpnc whois \
 wireless-regdb wireless_tools wpa_supplicant xl2tpd firewalld python-pyqt5 python-capng \
-bluez bluez-utils downgrade pacman-contrib pkgfile rebuild-detector reflector accountsservice \
+bluez bluez-utils pacman-contrib pkgfile rebuild-detector reflector accountsservice \
 bash-completion ffmpegthumbnailer gst-libav gst-plugin-pipewire gst-plugins-bad gst-plugins-ugly \
 libdvdcss libgsf libopenraw mlocate poppler-glib xdg-user-dirs xdg-utils \
 efitools haveged mtools sg3_utils --noconfirm --needed
 
 # Install git and yay
-sudo pacman -S git subversion yay --noconfirm --needed
-#if [ ! -f "/bin/yay" ]; then
-#    git clone https://aur.archlinux.org/yay.git
-#    cd yay
-#    makepkg -si --noconfirm
-#    cd ..
-#    rm -rf yay
-#fi
+sudo pacman -S git subversion --noconfirm --needed
+if [ ! -f "/bin/yay" ]; then
+    git clone https://aur.archlinux.org/yay.git
+    cd yay
+    makepkg -si --noconfirm
+    cd ..
+    rm -rf yay
+fi
 
 # systemd-resolvd binary
 sudo pacman -S systemd-resolvconf --noconfirm --needed
@@ -83,7 +83,6 @@ yay -S lens --removemake --noconfirm --needed # dev'essere prima di ATOM! Meglio
 yay -S google-chrome --noconfirm --needed
 yay -S openfortigui --noconfirm --needed
 yay -S tigervnc-viewer  --noconfirm --needed
-yay -S powershell --noconfirm --needed
 
 # Code editors
 sudo pacman -S code --noconfirm --needed
