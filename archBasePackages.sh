@@ -5,7 +5,7 @@ set -eu
 sudo pacman -Syu
 
 # Base Packages from Endeavour OS
-sudo pacman -S dhclient dialog dnsmasq dnsutils ethtool gnu-netcat modemmanager nbd ndisc6 \
+sudo pacman -S dhclient dialog dnsmasq dnsutils ethtool modemmanager nbd ndisc6 \
 nss-mdns openconnect openvpn ppp pptpclient rp-pppoe sshfs usb_modeswitch vpnc whois \
 wireless-regdb wireless_tools wpa_supplicant xl2tpd firewalld python-pyqt5 python-capng \
 bluez bluez-utils pacman-contrib pkgfile rebuild-detector reflector accountsservice \
