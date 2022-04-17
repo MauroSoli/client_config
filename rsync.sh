@@ -33,9 +33,11 @@ sudo rsync -avzpg -R --progress \
 /etc/resolv.conf \
 /etc/systemd/resolved.conf \
 /usr/share/icons \
+/usr/share/themes \
 /etc/NetworkManager/system-connections/Vodafone-Valopolish.nmconnection \
 /etc/NetworkManager/system-connections/POLiSh\ CASA.nmconnection \
 /etc/NetworkManager/system-connections/RCS-VPN.nmconnection \
 /etc/NetworkManager/system-connections/Vodafone-Valopolish.nmconnection \
+/etc/NetworkManager/NetworkManager.conf
 /usr/share/gnome-shell \
 root@10.15.20.124:/
