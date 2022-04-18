@@ -27,7 +27,7 @@ sudo pacman -S gnome-shell  gnome-terminal  gnome-tweak-tool gnome-control-cente
 sudo pacman -S nautilus --noconfirm --needed
 sudo pacman -S gnome-software gnome-software-packagekit-plugin gnome-multi-writer --noconfirm --needed
 sudo pacman -S networkmanager-fortisslvpn --noconfirm --needed
-sudo pacman -S gnome-tweaks gnome-shell-extensions --noconfirm --needed
+sudo pacman -S gnome-tweaks gnome-shell-extensions gnome-power-manager --noconfirm --needed
 yay -S chrome-gnome-shell --noconfirm --needed
 
 # Essential tools/software
