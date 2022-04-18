@@ -11,10 +11,10 @@ if [ $? = "0" ]; then
     git     clone git@gitlab-internal.rcslan.it:CDT/varnish-configuration.git
     git     clone git@gitlab-internal.rcslan.it:CDT/httpd-configuration.git
     mkdir -p xalok; cd xalok
-    git     git@gitlab-internal.rcslan.it:CDT/xalok/image-building.git
-    git     git@gitlab-internal.rcslan.it:CDT/xalok/rcs-corriere.git
-    git     git@gitlab-internal.rcslan.it:CDT/xalok/rcs-gazzetta.git
-    git     git@gitlab-internal.rcslan.it:CDT/xalok/rcs-provision.git
+    git     git@gitlab-internal.rcslan.it:xalok/image-building.git
+    git     git@gitlab-internal.rcslan.it:xalok/rcs-corriere.git
+    git     git@gitlab-internal.rcslan.it:xalok/rcs-gazzetta.git
+    git     git@gitlab-internal.rcslan.it:xalok/rcs-provision.git
     cd ..
 else
  echo "Problem with folder creation"
