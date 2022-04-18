@@ -63,7 +63,7 @@ sudo pacman -S nfs-utils nilfs-utils ntp smartmontools nmap --noconfirm --needed
 sudo pacman -S ncdu meld --noconfirm --needed
 sudo pacman -S terminator --noconfirm --needed
 sudo pacman -S kubectl --noconfirm --needed
-sudo pacman -S rclone --noconfirm --needed
+sudo pacman -S rclone fuse --noconfirm --needed
 sudo pacman -S duplicity python-requests-oauthlib --noconfirm --needed 
 sudo pacman -S rsnapshot --noconfirm --needed
 sudo pacman -S lshw --noconfirm --needed

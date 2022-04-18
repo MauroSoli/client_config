@@ -26,6 +26,7 @@ sudo rsync -avzpg -R --progress \
 /home/linux/Videos \
 /home/linux/Pictures \
 /etc/systemd/journald.conf \
+/etc/systemd/logind.conf \
 /etc/ssh/ssh_config \
 /etc/UPower \
 /etc/rsnapshot.conf \
