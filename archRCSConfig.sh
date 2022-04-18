@@ -34,9 +34,9 @@ else
  echo "Problem with folder creation"
 fi
 
-# GKE configuration
-gcloud init
-clusters=$(gcloud container clusters list | grep -vE 'NAME.*LOCATION' | awk '{print $1}') 
-for cluster in $clusters; do 
-   gcloud container clusters get-credentials $cluster --region europe-west4 --project prod-268013
-done 
+# GKE configuration --> Con il restore dei dati non serve
+#gcloud init
+#clusters=$(gcloud container clusters list | grep -vE 'NAME.*LOCATION' | awk '{print $1}') 
+#for cluster in $clusters; do 
+#   gcloud container clusters get-credentials $cluster --region europe-west4 --project prod-268013
+#done 
