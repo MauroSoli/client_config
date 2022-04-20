@@ -58,7 +58,7 @@ yay -S chrome-gnome-shell --noconfirm --needed
 # Essential tools/software
 sudo pacman -S git-lfs --noconfirm --needed
 git lfs install 
-sudo pacman -S vi net-tools unrar unzip xz --noconfirm --needed
+sudo pacman -S vi man net-tools unrar unzip xz --noconfirm --needed
 sudo pacman -S nfs-utils nilfs-utils ntp smartmontools nmap --noconfirm --needed
 sudo pacman -S ncdu meld --noconfirm --needed
 sudo pacman -S terminator --noconfirm --needed
