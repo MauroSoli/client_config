@@ -76,6 +76,7 @@ sudo pacman -S terragrunt --noconfirm --needed
 sudo pacman -S obs-studio --noconfirm --needed
 sudo pacman -S ansible --noconfirm --needed
 sudo pacman -S mariadb-clients --noconfirm --needed
+sudo pacman -S remmina --noconfirm --needed
 yes | sudo pacman -S nodejs-lts-fermium --needed
 sudo pacman -S nodejs-nopt libxss c-ares nodejs-nopt semver node-gyp npm yarn --noconfirm --needed
 yay -Sy nautilus-compare --noconfirm --needed
