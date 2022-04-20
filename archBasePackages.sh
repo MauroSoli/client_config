@@ -66,7 +66,7 @@ sudo pacman -S kubectl --noconfirm --needed
 sudo pacman -S rclone fuse --noconfirm --needed
 sudo pacman -S duplicity python-requests-oauthlib --noconfirm --needed 
 sudo pacman -S rsnapshot --noconfirm --needed
-sudo pacman -S lshw --noconfirm --needed
+sudo pacman -S lshw tpm2-tools --noconfirm --needed
 sudo pacman -S jre-openjdk --noconfirm --needed
 sudo pacman -S podman --noconfirm --needed
 sudo pacman -S docker --noconfirm --needed
