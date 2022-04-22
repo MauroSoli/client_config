@@ -57,7 +57,9 @@ yay -S chrome-gnome-shell --noconfirm --needed
 
 # Essential tools/software
 sudo pacman -S git-lfs --noconfirm --needed
-git lfs install 
+git lfs install
+sudo pacman -S python-pip --noconfirm --needed
+sudo pip install pre-commit
 sudo pacman -S vi pwgen man net-tools unrar unzip xz --noconfirm --needed
 sudo pacman -S nfs-utils nilfs-utils ntp smartmontools nmap --noconfirm --needed
 sudo pacman -S ncdu meld --noconfirm --needed
@@ -65,8 +67,6 @@ sudo pacman -S terminator --noconfirm --needed
 sudo pacman -S kubectl --noconfirm --needed
 sudo pacman -S rclone fuse --noconfirm --needed
 sudo pacman -S duplicity python-requests-oauthlib --noconfirm --needed
-sudo pacman -S python-pip --noconfirm --needed
-pip  install pre-commit
 sudo pacman -S rsnapshot --noconfirm --needed
 sudo pacman -S lshw tpm2-tools --noconfirm --needed
 sudo pacman -S jre-openjdk --noconfirm --needed
