@@ -64,7 +64,9 @@ sudo pacman -S ncdu meld --noconfirm --needed
 sudo pacman -S terminator --noconfirm --needed
 sudo pacman -S kubectl --noconfirm --needed
 sudo pacman -S rclone fuse --noconfirm --needed
-sudo pacman -S duplicity python-requests-oauthlib --noconfirm --needed 
+sudo pacman -S duplicity python-requests-oauthlib --noconfirm --needed
+sudo pacman -S python-pip --noconfirm --needed
+pip  install pre-commit
 sudo pacman -S rsnapshot --noconfirm --needed
 sudo pacman -S lshw tpm2-tools --noconfirm --needed
 sudo pacman -S jre-openjdk --noconfirm --needed
@@ -96,7 +98,7 @@ yay -S google-cloud-sdk --noconfirm --needed
 
 # Hypervisor section
 yes | sudo pacman -S iptables-nft --needed
-sudo pacman -S vagrant virt-manager bridge-utils openbsd-netcat --noconfirm --needed
+sudo pacman -S vagrant packer virt-manager bridge-utils openbsd-netcat --noconfirm --needed
 
 # Optional software
 sudo pacman -S telegram-desktop --noconfirm --needed
