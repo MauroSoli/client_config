@@ -42,7 +42,8 @@ root@10.15.20.124:/
 
 # duplicity backup
 sudo duplicity --name Dellarch --encrypt-key MauroSoli \
---full-if-older-than 3M \--progress --asynchronous-upload --verbosity info \
+--full-if-older-than 3M --progress --asynchronous-upload --verbosity info \
+--gpg-options --pinentry-mode=loopback \
 --include="/home/linux/.atom" \
 --include="/home/linux/.bash*" \
 --include="/home/linux/.config" \
