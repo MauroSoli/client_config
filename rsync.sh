@@ -3,7 +3,6 @@ sudo rsync -avzpg -R --progress \
 /home/linux/.atom \
 /home/linux/.bash* \
 /home/linux/.config \
-/home/linux/.duplicity* \
 /home/linux/.gitconfig \
 /home/linux/.k8slens \
 /home/linux/.kube \
@@ -20,6 +19,7 @@ sudo rsync -avzpg -R --progress \
 /home/linux/S3-RCS \
 /home/linux/Videos \
 /home/linux/Pictures \
+/root/.duplicity* \
 /etc/systemd/journald.conf \
 /etc/systemd/logind.conf \
 /etc/ssh/ssh_config \
@@ -41,11 +41,10 @@ root@10.15.20.124:/
 
 
 # duplicity backup
-duplicity --name Dellarch --encrypt-key MauroSoli --full-if-older-than 3M --progress --verbosity info \
+sudo duplicity --name Dellarch --encrypt-key MauroSoli --full-if-older-than 3M --progress --verbosity info \
 --include="/home/linux/.atom" \
 --include="/home/linux/.bash*" \
 --include="/home/linux/.config" \
---include="/home/linux/.duplicity*" \
 --include="/home/linux/.gitconfig" \
 --include="/home/linux/.k8slens" \
 --include="/home/linux/.kube" \
@@ -62,6 +61,7 @@ duplicity --name Dellarch --encrypt-key MauroSoli --full-if-older-than 3M --prog
 --include="/home/linux/S3-RCS" \
 --include="/home/linux/Videos" \
 --include="/home/linux/Pictures" \
+--include="/root/.duplicity*" \
 --include="/etc/systemd/journald.conf" \
 --include="/etc/systemd/logind.conf" \
 --include="/etc/ssh/ssh_config" \
