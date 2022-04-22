@@ -41,7 +41,8 @@ root@10.15.20.124:/
 
 
 # duplicity backup
-sudo duplicity --name Dellarch --encrypt-key MauroSoli --full-if-older-than 3M --progress --verbosity info \
+sudo duplicity --name Dellarch --encrypt-key MauroSoli \
+--full-if-older-than 3M \--progress --asynchronous-upload --verbosity info \
 --include="/home/linux/.atom" \
 --include="/home/linux/.bash*" \
 --include="/home/linux/.config" \
@@ -78,7 +79,4 @@ sudo duplicity --name Dellarch --encrypt-key MauroSoli --full-if-older-than 3M -
 --include="/etc/NetworkManager/system-connections/Vodafone-Valopolish.nmconnection" \
 --include="/etc/NetworkManager/NetworkManager.conf" \
 --include="/usr/share/gnome-shell" \
---exclude='**' \
-/ \
-onedrive://duplicity/
-
+--exclude='**' / "onedrive://duplicity"
