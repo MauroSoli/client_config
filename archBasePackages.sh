@@ -91,6 +91,7 @@ yay -S tigervnc-viewer  --noconfirm --needed
 sudo pacman -S code --noconfirm --needed
 yes | sudo pacman -S nodejs-lts-gallium --needed
 sudo pacman -S atom --noconfirm --needed
+wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash # Joplin from appimage
 
 #Cloud CLI
 sudo pacman -S aws-cli --noconfirm --needed
