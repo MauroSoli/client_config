@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo pacman -Sy archlinux-keyring --noconfirm
+sudo pacman -R nodejs-lts-gallium apm atom npm node-gyp nodejs-nopt npm semver yarn --noconfirm
 sudo pacman -Syu
-sudo pacman -R nodejs-lts-gallium apm atom --noconfirm
 yay -Syu
 yes | sudo pacman -S nodejs-lts-gallium --needed
 sudo pacman -S atom --noconfirm --needed
