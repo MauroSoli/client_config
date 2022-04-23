@@ -49,7 +49,7 @@ adobe-source-han-sans-kr-fonts --noconfirm --needed
 # Gnome software
 sudo pacman -S gnome-shell  gnome-terminal  gnome-tweak-tool gnome-control-center xdg-user-dirs gdm --noconfirm --needed
 sudo pacman -S nautilus --noconfirm --needed
-sudo pacman -S gnome-software gnome-software-packagekit-plugin gnome-multi-writer --noconfirm --needed
+sudo pacman -S gnome-software gnome-software-packagekit-plugin gnome-multi-writer gnome-sound-recorder --noconfirm --needed
 sudo pacman -S networkmanager-fortisslvpn networkmanager-openvpn --noconfirm --needed
 sudo pacman -S gnome-tweaks gnome-shell-extensions --noconfirm --needed
 sudo pacman -Sy dconf dconf-editor --noconfirm --needed
