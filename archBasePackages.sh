@@ -60,7 +60,7 @@ sudo pacman -S git-lfs --noconfirm --needed
 git lfs install
 sudo pacman -S python-pip --noconfirm --needed
 sudo pip install pre-commit
-sudo pacman -S vi pwgen man net-tools unrar unzip xz --noconfirm --needed
+sudo pacman -S vi pwgen man net-tools unrar unzip xz wget --noconfirm --needed
 sudo pacman -S nfs-utils nilfs-utils ntp smartmontools nmap --noconfirm --needed
 sudo pacman -S ncdu meld --noconfirm --needed
 sudo pacman -S terminator --noconfirm --needed
@@ -86,7 +86,6 @@ yay -S lens --removemake --noconfirm --needed # dev'essere prima di ATOM! Meglio
 yay -S google-chrome --noconfirm --needed
 yay -S openfortigui --noconfirm --needed
 yay -S tigervnc-viewer  --noconfirm --needed
-yay -S jolin --noconfirm --needed
 
 # Code editors
 sudo pacman -S code --noconfirm --needed
