@@ -81,3 +81,11 @@ sudo duplicity --name Dellarch --encrypt-key MauroSoli \
 --include="/etc/NetworkManager/NetworkManager.conf" \
 --include="/usr/share/gnome-shell" \
 --exclude='**' / "onedrive://duplicity"
+
+# duplicity restore (3 day ago)
+sudo duplicity -t 3D --file-to-restore /home/linux/.bash_profile \
+"onedrive://duplicity" /tmp/.bash_profile
+
+# duplicity restore
+sudo duplicity --file-to-restore /home/linux/.bash_profile \
+"onedrive://duplicity" /tmp/.bash_profile
