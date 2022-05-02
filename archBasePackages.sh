@@ -84,15 +84,17 @@ sudo pacman -S firefox --noconfirm --needed
 yes | sudo pacman -S nodejs-lts-fermium --needed
 sudo pacman -S nodejs-nopt libxss c-ares nodejs-nopt semver node-gyp npm yarn --noconfirm --needed
 yay -Sy nautilus-compare --noconfirm --needed
-yay -S lens --removemake --noconfirm --needed # dev'essere prima di ATOM! Meglio non usare noconfirm
+#yay -S lens --removemake --noconfirm --needed # dev'essere prima di ATOM! Meglio non usare noconfirm
+yay -S lens-bin --removemake --noconfirm --needed
 yay -S google-chrome --noconfirm --needed
 yay -S openfortigui --noconfirm --needed
 yay -S tigervnc-viewer  --noconfirm --needed
-
+a
 # Code editors
 sudo pacman -S code --noconfirm --needed
-yes | sudo pacman -S nodejs-lts-gallium --needed
-sudo pacman -S atom --noconfirm --needed
+#yes | sudo pacman -S nodejs-lts-gallium --needed
+#sudo pacman -S atom --noconfirm --needed
+yay -S atom-editor-beta-bin --removemake --noconfirm --needed
 wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash # Joplin from appimage
 
 #Cloud CLI
