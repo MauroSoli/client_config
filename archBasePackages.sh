@@ -105,6 +105,8 @@ yay -S google-cloud-sdk --noconfirm --needed
 # Hypervisor section
 yes | sudo pacman -S iptables-nft --needed
 sudo pacman -S vagrant packer virt-manager bridge-utils openbsd-netcat --noconfirm --needed
+sudo pacman -S minikube --noconfirm --needed
+usermod -aG libvirt $(whoami) --noconfirm --needed
 
 # Optional software
 sudo pacman -S telegram-desktop --noconfirm --needed
