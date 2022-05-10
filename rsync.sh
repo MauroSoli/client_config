@@ -36,6 +36,7 @@ sudo rsync -avzpg -R --progress \
 /etc/NetworkManager/system-connections/Vodafone-Valopolish.nmconnection \
 /etc/NetworkManager/NetworkManager.conf
 /usr/share/gnome-shell \
+/var/lib/gdm/.config \
 root@10.15.20.124:/
 
 
@@ -80,6 +81,7 @@ sudo duplicity --name Dellarch --encrypt-key MauroSoli \
 --include="/etc/NetworkManager/system-connections/Vodafone-Valopolish.nmconnection" \
 --include="/etc/NetworkManager/NetworkManager.conf" \
 --include="/usr/share/gnome-shell" \
+--include="/var/lib/gdm/.config" \
 --exclude='**' / "onedrive://duplicity"
 
 # duplicity restore (3 day ago)
