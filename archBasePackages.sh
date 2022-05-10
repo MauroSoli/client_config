@@ -89,7 +89,8 @@ yay -S lens-bin --removemake --noconfirm --needed
 yay -S google-chrome --noconfirm --needed
 yay -S openfortigui --noconfirm --needed
 yay -S tigervnc-viewer  --noconfirm --needed
-a
+yay -S tcpping --noconfirm --needed
+
 # Code editors
 sudo pacman -S code --noconfirm --needed
 #yes | sudo pacman -S nodejs-lts-gallium --needed
