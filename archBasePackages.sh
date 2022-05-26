@@ -61,7 +61,7 @@ git lfs install
 sudo pacman -S python-pip --noconfirm --needed
 sudo pip install pre-commit
 sudo pacman -S vi pwgen man net-tools unrar unzip xz wget inetutils --noconfirm --needed
-sudo pacman -S nfs-utils nilfs-utils ntp smartmontools nmap --noconfirm --needed
+sudo pacman -S nfs-utils nilfs-utils ntp smartmontools nmap tcpdump --noconfirm --needed
 sudo pacman -S ncdu meld --noconfirm --needed
 sudo pacman -S terminator --noconfirm --needed
 sudo pacman -S kubectl --noconfirm --needed
