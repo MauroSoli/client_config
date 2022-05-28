@@ -88,6 +88,7 @@ yay -Sy nautilus-compare --noconfirm --needed
 #yay -S lens --removemake --noconfirm --needed # dev'essere prima di ATOM! Meglio non usare noconfirm
 yay -S lens-bin --removemake --noconfirm --needed
 yay -S google-chrome --noconfirm --needed
+yay -S googler-git --noconfirm --needed
 yay -S openfortigui --noconfirm --needed
 yay -S tigervnc-viewer  --noconfirm --needed
 yay -S tcpping --noconfirm --needed
