@@ -103,7 +103,7 @@ wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_
 
 #Cloud CLI
 sudo pacman -S aws-cli --noconfirm --needed
-yay -S google-cloud-sdk --noconfirm --needed
+yay -S google-cloud-sdk google-cloud-sdk-gke-gcloud-auth-plugin --noconfirm --needed
 
 # Hypervisor section
 yes | sudo pacman -S iptables-nft --needed
