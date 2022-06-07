@@ -82,10 +82,8 @@ sudo pacman -S remmina --noconfirm --needed
 sudo pacman -S bitwarden --noconfirm --needed
 sudo pacman -S firefox --noconfirm --needed
 sudo pacman -S tmate --noconfirm --needed
-yes | sudo pacman -S nodejs-lts-fermium --needed
 sudo pacman -S nodejs-nopt libxss c-ares nodejs-nopt semver node-gyp npm yarn --noconfirm --needed
 yay -Sy nautilus-compare --noconfirm --needed
-#yay -S lens --removemake --noconfirm --needed # dev'essere prima di ATOM! Meglio non usare noconfirm
 yay -S lens-bin --removemake --noconfirm --needed
 yay -S google-chrome --noconfirm --needed
 yay -S googler-git --noconfirm --needed
@@ -99,6 +97,7 @@ sudo pacman -S code --noconfirm --needed
 #sudo pacman -S atom --noconfirm --needed
 yay -S atom-editor-beta-bin --removemake --noconfirm --needed
 yay -S onlyoffice-bin --noconfirm --needed
+sudo npm install -g gatsby-cli # generatore static site - Foam project
 wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash # Joplin from appimage
 
 #Cloud CLI
