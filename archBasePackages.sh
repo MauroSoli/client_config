@@ -97,7 +97,8 @@ sudo pacman -S code --noconfirm --needed
 #sudo pacman -S atom --noconfirm --needed
 yay -S atom-editor-beta-bin --removemake --noconfirm --needed
 yay -S onlyoffice-bin --noconfirm --needed
-sudo npm install -g gatsby-cli # generatore static site - Foam project
+sudo npm install gatsby --legacy-peer-deps --global # static site generator - Foam project
+sudo npm install gatsby-cli --global # static site generator - Foam project
 wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash # Joplin from appimage
 
 #Cloud CLI
