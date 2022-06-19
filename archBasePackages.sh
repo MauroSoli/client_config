@@ -110,7 +110,7 @@ yay -Sy  azure-cli powershell-bin --noconfirm --needed
 
 # Hypervisor section
 yes | sudo pacman -S iptables-nft --needed
-sudo pacman -S vagrant packer virt-manager bridge-utils openbsd-netcat --noconfirm --needed
+sudo pacman -S vagrant packer virt-manager virt-viewer bridge-utils openbsd-netcat --noconfirm --needed
 vagrant plugin install vagrant-libvirt
 sudo pacman -S minikube --noconfirm --needed
 usermod -aG libvirt $(whoami) --noconfirm --needed
