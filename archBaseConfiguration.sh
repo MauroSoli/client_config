@@ -13,3 +13,7 @@ if [ $? = "0" ]; then
 else
  echo "Problem with folder creation"
 fi
+
+# Sudoers config
+# 30 min timeout
+echo 'Defaults env_reset,timestamp_timeout=30' > /etc/sudoers.d/custom
