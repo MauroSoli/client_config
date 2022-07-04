@@ -63,7 +63,7 @@ sudo pip install pre-commit
 sudo pacman -S vi pwgen man net-tools unrar unzip xz wget inetutils --noconfirm --needed
 sudo pacman -S atop htop --noconfirm --needed
 sudo pacman -S fzf ripgrep-all --noconfirm --needed
-sudo pacman -S nfs-utils nilfs-utils ntp smartmontools strace nmap tcpdump wireshark-qt --noconfirm --needed
+sudo pacman -S ntfs-3g nfs-utils nilfs-utils ntp smartmontools strace nmap tcpdump wireshark-qt --noconfirm --needed
 sudo pacman -S ncdu meld --noconfirm --needed
 sudo pacman -S terminator --noconfirm --needed
 sudo pacman -S kubectl --noconfirm --needed
